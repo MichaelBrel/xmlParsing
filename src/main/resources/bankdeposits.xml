@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<banks xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://www.example.com/banks"
+         xsi:schemaLocation="http://www.example.com/banks  banks.xsd">
+
+<deposit accountId="AAAAAAAA1" country="Belarus" type="calculated">
+    <name>Priorbank</name>
+    <depositor>Mike</depositor>
+    <amountOnDeposit>1500</amountOnDeposit>
+    <profitability>5</profitability>
+    <timeConstraints>2</timeConstraints>
+</deposit>
+
+    <deposit accountId="AAAAAAAA2" country="Belarus" type="demand">
+        <name>Priorbank</name>
+        <depositor>Alex</depositor>
+        <amountOnDeposit>1600</amountOnDeposit>
+        <profitability>4</profitability>
+        <timeConstraints>2</timeConstraints>
+    </deposit>
+
+    <deposit accountId="AAAAAAAA3" country="Belarus" type="urgent">
+        <name>Priorbank</name>
+        <depositor>Ivan</depositor>
+        <amountOnDeposit>1700</amountOnDeposit>
+        <profitability>1</profitability>
+        <timeConstraints>2</timeConstraints>
+    </deposit>
+
+    <deposit accountId="AAAAAAAA4" country="Belarus" >
+        <name>Priorbank</name>
+        <depositor>Boris</depositor>
+        <amountOnDeposit>1800</amountOnDeposit>
+        <profitability>2</profitability>
+        <timeConstraints>3</timeConstraints>
+    </deposit>
+
+
+    <deposit accountId="BBBBBBBBB1" country="Switzerland" type="demand">
+        <name>SwizBank</name>
+        <depositor>Svetlana</depositor>
+        <amountOnDeposit>2500</amountOnDeposit>
+        <profitability>5</profitability>
+        <timeConstraints>4</timeConstraints>
+    </deposit>
+
+    <deposit accountId="BBBBBBBBB2" country="Switzerland" type="urgent">
+        <name>SwizBank</name>
+        <depositor>Egor</depositor>
+        <amountOnDeposit>3500</amountOnDeposit>
+        <profitability>5</profitability>
+        <timeConstraints>3</timeConstraints>
+    </deposit>
+
+    <deposit accountId="BBBBBBBBB3" country="Switzerland" type="accumulative">
+        <name>SwizBank</name>
+        <depositor>Eugen</depositor>
+        <amountOnDeposit>4500</amountOnDeposit>
+        <profitability>3</profitability>
+        <timeConstraints>1</timeConstraints>
+    </deposit>
+
+    <deposit accountId="BBBBBBBBB4" country="Switzerland" type="calculated">
+        <name>SwizBank</name>
+        <depositor>Olga</depositor>
+        <amountOnDeposit>5500</amountOnDeposit>
+        <profitability>6</profitability>
+        <timeConstraints>6</timeConstraints>
+    </deposit>
+
+    <deposit accountId="CCCCCCCC1" country="Germany" type="calculated">
+        <name>GermanBank</name>
+        <depositor>Helga</depositor>
+        <amountOnDeposit>2300</amountOnDeposit>
+        <profitability>2</profitability>
+        <timeConstraints>6</timeConstraints>
+    </deposit>
+
+    <deposit accountId="CCCCCCCC2" country="Germany" type="accumulative">
+        <name>GermanBank</name>
+        <depositor>Hwitzerk</depositor>
+        <amountOnDeposit>3300</amountOnDeposit>
+        <profitability>3</profitability>
+        <timeConstraints>3</timeConstraints>
+    </deposit>
+
+    <deposit accountId="CCCCCCCC3" country="Germany" type="demand">
+        <name>GermanBank</name>
+        <depositor>Manu</depositor>
+        <amountOnDeposit>4300</amountOnDeposit>
+        <profitability>4</profitability>
+        <timeConstraints>4</timeConstraints>
+    </deposit>
+
+    <deposit accountId="CCCCCCCC4" country="Germany" type="calculated">
+        <name>GermanBank</name>
+        <depositor>Raphael</depositor>
+        <amountOnDeposit>5300</amountOnDeposit>
+        <profitability>1</profitability>
+        <timeConstraints>2</timeConstraints>
+    </deposit>
+
+    <deposit accountId="DDDDDDDDDD1" country="Russia" type="calculated">
+        <name>RusBank</name>
+        <depositor>Viktor</depositor>
+        <amountOnDeposit>2300</amountOnDeposit>
+        <profitability>1</profitability>
+        <timeConstraints>2</timeConstraints>
+    </deposit>
+
+    <deposit accountId="DDDDDDDDDD2" country="Russia" type="calculated">
+        <name>RusBank</name>
+        <depositor>Vasilij</depositor>
+        <amountOnDeposit>7890</amountOnDeposit>
+        <profitability>2</profitability>
+        <timeConstraints>2</timeConstraints>
+    </deposit>
+
+    <deposit accountId="DDDDDDDDDD3" country="Russia" type="calculated">
+        <name>RusBank</name>
+        <depositor>Alex</depositor>
+        <amountOnDeposit>2300</amountOnDeposit>
+        <profitability>3</profitability>
+        <timeConstraints>4</timeConstraints>
+    </deposit>
+
+    <deposit accountId="DDDDDDDDDD4" country="Russia" type="calculated">
+        <name>RusBank</name>
+        <depositor>Danila</depositor>
+        <amountOnDeposit>2300</amountOnDeposit>
+        <profitability>5</profitability>
+        <timeConstraints>6</timeConstraints>
+    </deposit>
+
+
+</banks>

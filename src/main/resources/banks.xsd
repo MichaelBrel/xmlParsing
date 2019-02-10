@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.example.com/banks"
+        xmlns:tns="http://www.example.com/banks"
+        elementFormDefault="qualified">
+    <element name="banks">
+        <complexType>
+            <sequence>
+                <element name="deposit" maxOccurs="unbounded">
+                    <complexType>
+                        <sequence>
+                            <element name="name" type="string"/>
+                            <element name="depositor" type="string"/>
+                            <element name="amountOnDeposit" type="tns:AmountOnDeposit"/>
+                            <element name="profitability" type="tns:Profitability"/>
+                            <element name="timeConstraints" type="tns:TimeConstraints"/>
+                        </sequence>
+                        <attribute name="accountId" use="required">
+                            <simpleType>
+                                <restriction base="ID">
+                                    <pattern value="([a-zA-Z])[a-zA-Z0-9]{7,19}"/>
+                                </restriction>
+                            </simpleType>
+                        </attribute>
+
+                        <attribute name="country" type="string" use="optional"/>
+                        <attribute name="type" type="tns:Type" default="saving"/>
+                    </complexType>
+                </element>
+
+            </sequence>
+
+
+        </complexType>
+    </element>
+
+    <simpleType name="Type">
+        <restriction base="string">
+            <enumeration value="demand"/>
+            <enumeration value="urgent"/>
+            <enumeration value="calculated"/>
+            <enumeration value="accumulative"/>
+            <enumeration value="saving"/>
+            <enumeration value="metal"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="TimeConstraints">
+        <restriction base="int">
+            <minInclusive value="1"/>
+            <maxInclusive value="10"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="AmountOnDeposit">
+        <restriction base="double">
+            <minInclusive value="1000"/>
+            <maxInclusive value="1000000"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="Profitability">
+        <restriction base="double">
+            <minInclusive value="0"/>
+            <maxInclusive value="20"/>
+        </restriction>
+    </simpleType>
+
+</schema>
